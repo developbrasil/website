@@ -1,3 +1,102 @@
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../styles/fonts/HKGrotesk-Medium.eot");
+  src: url("../styles/fonts/HKGrotesk-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../styles/fonts/HKGrotesk-Medium.woff2") format("woff2"),
+    url("../styles/fonts/HKGrotesk-Medium.woff") format("woff"),
+    url("../styles/fonts/HKGrotesk-Medium.ttf") format("truetype"),
+    url("../styles/fonts/HKGrotesk-Medium.svg#HKGrotesk-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../styles/fonts/HKGrotesk-SemiBold.eot");
+  src: url("../styles/fonts/HKGrotesk-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../styles/fonts/HKGrotesk-SemiBold.woff2") format("woff2"),
+    url("../styles/fonts/HKGrotesk-SemiBold.woff") format("woff"),
+    url("../styles/fonts/HKGrotesk-SemiBold.ttf") format("truetype"),
+    url("../styles/fonts/HKGrotesk-SemiBold.svg#HKGrotesk-SemiBold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../styles/fonts/HKGrotesk-Bold.eot");
+  src: url("../styles/fonts/HKGrotesk-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../styles/fonts/HKGrotesk-Bold.woff2") format("woff2"),
+    url("../styles/fonts/HKGrotesk-Bold.woff") format("woff"),
+    url("../styles/fonts/HKGrotesk-Bold.ttf") format("truetype"),
+    url("../styles/fonts/HKGrotesk-Bold.svg#HKGrotesk-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../styles/fonts/HKGrotesk-Regular.eot");
+  src: url("../styles/fonts/HKGrotesk-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../styles/fonts/HKGrotesk-Regular.woff2") format("woff2"),
+    url("../styles/fonts/HKGrotesk-Regular.woff") format("woff"),
+    url("../styles/fonts/HKGrotesk-Regular.ttf") format("truetype"),
+    url("../styles/fonts/HKGrotesk-Regular.svg#HKGrotesk-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LEMON MILK";
+  src: url("../styles/fonts/LEMONMILK-Regular.eot");
+  src: url("../styles/fonts/LEMONMILK-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../styles/fonts/LEMONMILK-Regular.woff2") format("woff2"),
+    url("../styles/fonts/LEMONMILK-Regular.woff") format("woff"),
+    url("../styles/fonts/LEMONMILK-Regular.ttf") format("truetype"),
+    url("../styles/fonts/LEMONMILK-Regular.svg#LEMONMILK-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LEMON MILK";
+  src: url("../styles/fonts/LEMONMILK-Medium.eot");
+  src: url("../styles/fonts/LEMONMILK-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../styles/fonts/LEMONMILK-Medium.woff2") format("woff2"),
+    url("../styles/fonts/LEMONMILK-Medium.woff") format("woff"),
+    url("../styles/fonts/LEMONMILK-Medium.ttf") format("truetype"),
+    url("../styles/fonts/LEMONMILK-Medium.svg#LEMONMILK-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LEMON MILK";
+  src: url("../styles/fonts/LEMONMILK-Bold.eot");
+  src: url("../styles/fonts/LEMONMILK-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../styles/fonts/LEMONMILK-Bold.woff2") format("woff2"),
+    url("../styles/fonts/LEMONMILK-Bold.woff") format("woff"),
+    url("../styles/fonts/LEMONMILK-Bold.ttf") format("truetype"),
+    url("../styles/fonts/LEMONMILK-Bold.svg#LEMONMILK-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document

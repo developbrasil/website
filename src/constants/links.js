@@ -1,14 +1,27 @@
 export default [
   {
     path: "/",
-    text: "about",
+    text: "evento",
+    label: "o evento",
   },
   {
     path: "/",
-    text: "packages",
+    text: "palestrantes",
+    label: "palestrantes",
   },
   {
     path: "/",
-    text: "contact",
+    text: "ingressos",
+    label: "ingressos",
+  },
+  {
+    path: "/",
+    text: "contato",
+    label: "contato",
+  },
+  {
+    path: "/",
+    text: "patrocinadores",
+    label: "patrocinadores",
   },
 ]

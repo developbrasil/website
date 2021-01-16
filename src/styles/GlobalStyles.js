@@ -1,11 +1,12 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyles = createGlobalStyle`
+
 * {
     box-sizing: border-box;
   }
 
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'LEMON MILK', sans-serif;
   color: #fff;
   /* background-color: #060c21; */
   background: linear-gradient(45deg, #060c21, #0d0139);

@@ -1,15 +1,23 @@
 import styled from "styled-components"
 
 export const NavStyles = styled.nav`
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  width: 100%;
-  left: 0;
-  right: 0;
-  display: flex;
-  padding: 1rem;
+  background: #eae8e8;
   box-sizing: border-box;
+  left: 0;
+
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  z-index: 10;
+
+  .wrapper {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+  }
 
   .masthead {
     z-index: 3;
@@ -17,14 +25,10 @@ export const NavStyles = styled.nav`
     justify-content: space-between;
 
     img {
-      width: 90px;
-
-      @media (min-width: 768px) {
-        width: 100px;
-      }
+      width: 120px;
 
       @media (min-width: 1200px) {
-        width: 120px;
+        width: 180px;
       }
     }
   }
@@ -35,7 +39,7 @@ export const NavStyles = styled.nav`
     justify-content: center;
     position: fixed;
     text-align: center;
-    background: linear-gradient(45deg, #060c21, #0d0139);
+    background: #eae8e8;
     margin: 0;
     height: 100%;
     top: 0;
@@ -55,18 +59,19 @@ export const NavStyles = styled.nav`
       padding: 0.75rem 0;
       a {
         text-decoration: none;
-        text-transform: capitalize;
-        color: #fff;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: #000;
         transition: 0.3s;
 
         &.active {
-          color: #e609b5;
+          color: #f00;
         }
       }
       &:hover {
         cursor: pointer;
         a {
-          color: #e609b5;
+          color: #f00;
         }
       }
     }
@@ -87,7 +92,7 @@ export const NavStyles = styled.nav`
       display: block;
       width: 30px;
       height: 2px;
-      background-color: #fff;
+      background-color: #000;
       transition: 0.2s ease-in;
 
       &:nth-child(1) {
