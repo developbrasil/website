@@ -31,6 +31,10 @@ export const NavStyles = styled.nav`
         width: 180px;
       }
     }
+
+    @media (max-width: 991px) {
+      align-items: flex-start;
+    }
   }
 
   .nav-links {
