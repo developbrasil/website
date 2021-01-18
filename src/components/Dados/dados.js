@@ -87,6 +87,10 @@ const Programacao = styled.div`
   .text {
     width: 60%;
     padding-left: 24px;
+
+    h2 {
+      margin-left: 0;
+    }
   }
 
   .image {
