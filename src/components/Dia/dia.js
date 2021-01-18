@@ -50,15 +50,18 @@ const Dia = () => {
           <div className="text">
             <H2>Programação</H2>
             <P>
-              O DEVELOP BRASIL ocorrerá no dia 21 de agosto de 2021, no K Hotel,
-              localizado em Goiânia, GO. O evento terá início às 07:30 da manhã
-              e fim as 19:30 tendo a disponibilidade de 600 pessoas presenciais
-              e infinitas pessoas conectadas virtualmente.
+              O DEVELOP BRASIL ocorrerá no dia 21 de agosto de 2021, em Goiânia,
+              GO. O evento terá início às 07:30 da manhã e fim as 19:30 tendo a
+              disponibilidade de 600 pessoas presenciais e infinitas pessoas
+              conectadas virtualmente.
             </P>
+            <p>
+              <br />
+            </p>
           </div>
-          <div className="image">
+          {/* <div className="image">
             <Img fluid={img1.childImageSharp.fluid} />
-          </div>
+          </div> */}
         </Programacao>
       </ProgramacaoWrapper>
     </>

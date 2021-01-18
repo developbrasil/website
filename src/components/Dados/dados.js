@@ -34,12 +34,10 @@ const Dados = () => {
       <TextBlockWrapper id="dados">
         <div>
           <P>
-            No período matutino, reuniremos grandes líderes e empresas
-            regionais, com o intuito de fomentar a cultura local. Já no
-            vespertino, iremos convidar grandes empresas nacionais para
-            inspirarem e compartilharem experiências transformadoras. E, por
-            último, traremos uma atração surpresa para finalizar o evento com um
-            Master Class imperdível.
+            Reuniremos grandes líderes e empresas nacionais, com o intuito de
+            fomentar a cultura local, inspirarem e compartilharem experiências
+            transformadoras. E, por último, traremos uma atração surpresa para
+            finalizar o evento com um Master Class imperdível!
           </P>
         </div>
       </TextBlockWrapper>
