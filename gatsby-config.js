@@ -11,7 +11,7 @@ module.exports = {
     title: "Develop Brasil",
     titleTemplate: "%s | Inquietos que procuram algo a mais",
     description:
-      "O DEVELOP BRASIL é uma experiência com as maiores empresas e líderes do Brasil. Imersões no mundo do empreendedorismo, com o intuito de desenvolver e expandir novos horizontes profissionais.",
+      "O DEVELOP BRASIL é uma experiência com grandes líderes e empresas do Brasil. Venha participar dessa imersão no mundo do empreendedorismo. Vamos desenvolver!",
     author: "Leo AD",
     image: "/develop-brasil.jpg",
     siteUrl: "https://www.experienciadevelopbrasil.com.br",
