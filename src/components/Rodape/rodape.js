@@ -21,7 +21,8 @@ const Rodape = () => {
               <h4>Fale com a gente</h4>
             </div>
             <div>
-              <h5>(62) 99999-9999</h5>
+              <h5>(62) 98181-4731</h5>
+              <h5>(62) 99907-6929</h5>
               <h5>contato@developbrasil.com.br</h5>
             </div>
             <Icons>
