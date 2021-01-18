@@ -1,24 +1,10 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
-import { useInView } from "react-intersection-observer"
-import { motion, useAnimation } from "framer-motion"
 import { Parallax } from "react-parallax"
 
 import bg from "../../images/graficos.jpg"
-import bg2 from "../../images/maos.jpg"
 
 const Experiencias = () => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView({
-    // Percentage of item in view to trigger animation
-    threshold: 0.25,
-  })
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible")
-    }
-  }, [controls, inView])
   return (
     <>
       <Parallax
@@ -30,16 +16,7 @@ const Experiencias = () => {
         <ParaImage></ParaImage>
       </Parallax>
       <TextBlockWrapper id="experiencias">
-        <motion.div
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 25 },
-          }}
-          transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
-        >
+        <div>
           <h2>D’experiências</h2>
           <p>
             O DEVELOP BRASIL é uma experiência com as maiores empresas e líderes
@@ -50,7 +27,7 @@ const Experiencias = () => {
             Conectar multidões que acreditam que o empreendedorismo é descobrir
             um novo caminho para concretizar sonhos.
           </p>
-        </motion.div>
+        </div>
       </TextBlockWrapper>
     </>
   )
@@ -81,6 +58,7 @@ const TextBlockWrapper = styled.section`
 
     @media (max-width: 768px) {
       font-size: 38px;
+      margin-left: 0;
     }
   }
 

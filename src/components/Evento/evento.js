@@ -1,23 +1,10 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
-import { useInView } from "react-intersection-observer"
-import { motion, useAnimation } from "framer-motion"
 import { Parallax } from "react-parallax"
 
 import bg from "../../images/espiral.jpg"
 
 const Evento = () => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView({
-    // Percentage of item in view to trigger animation
-    threshold: 0.25,
-  })
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible")
-    }
-  }, [controls, inView])
   return (
     <>
       <Parallax
@@ -29,16 +16,7 @@ const Evento = () => {
         <ParaImage></ParaImage>
       </Parallax>
       <TextBlockWrapper id="evento">
-        <motion.div
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 25 },
-          }}
-          transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
-        >
+        <div>
           <p>
             Desenvolver vai além de ser um processo, é uma experiência. Troca,
             evolução, conhecimento e crescimento - tudo passa pelo
@@ -57,7 +35,7 @@ const Evento = () => {
             porta, mas que é preciso correr atrás delas. Fomos feitos para os
             que desejam ser protagonistas da sua história e do seu legado.
           </p>
-        </motion.div>
+        </div>
       </TextBlockWrapper>
     </>
   )

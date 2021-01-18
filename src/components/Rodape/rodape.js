@@ -1,7 +1,5 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
-import { useInView } from "react-intersection-observer"
-import { motion, useAnimation } from "framer-motion"
 import { Parallax } from "react-parallax"
 
 import socialIcons from "../../constants/social-icons"
@@ -9,35 +7,11 @@ import socialIcons from "../../constants/social-icons"
 import bg from "../../images/black-bg.jpg"
 import dbrasil from "../../images/d-brasil-logo.svg"
 
-import palestranteFake from "../../images/palestrante-fake.jpg"
-
 const Rodape = () => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView({
-    // Percentage of item in view to trigger animation
-    threshold: 0.1,
-  })
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible")
-    }
-  }, [controls, inView])
   return (
     <Section bgImage={bg} bgImageAlt="Develop Brsil" strength={400}>
       <Wrapper>
-        <motion.div
-          style={{ padding: "16px 0" }}
-          id="contato"
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 25 },
-          }}
-          transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
-        >
+        <div>
           <Title>
             <h2>preparado para a</h2>
             <h2>maior imersão da sua vida?</h2>
@@ -66,9 +40,9 @@ const Rodape = () => {
             </Icons>
           </Contact>
           <LogoWrapper>
-            <img src={dbrasil} />
+            <img src={dbrasil} alt="Develop Brasil" />
           </LogoWrapper>
-        </motion.div>
+        </div>
       </Wrapper>
     </Section>
   )

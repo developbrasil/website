@@ -1,7 +1,6 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
-import { useInView } from "react-intersection-observer"
-import { motion, useAnimation } from "framer-motion"
+
 import { Parallax } from "react-parallax"
 
 import bg from "../../images/black-bg.jpg"
@@ -26,32 +25,10 @@ const PALESTRANTES = [
 const PATROCINADORES = [1, 2, 3, 4, 5]
 
 const Palestrantes = () => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView({
-    // Percentage of item in view to trigger animation
-    threshold: 0.1,
-  })
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible")
-    }
-  }, [controls, inView])
   return (
     <Section bgImage={bg} bgImageAlt="Develop Brsil" strength={400}>
       <Wrapper>
-        <motion.div
-          style={{ padding: "16px 0" }}
-          id="palestrantes"
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 25 },
-          }}
-          transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
-        >
+        <div>
           <h2>Palestrantes</h2>
           <PalestrantesWrapper>
             {PALESTRANTES.map(palestrante => (
@@ -62,19 +39,8 @@ const Palestrantes = () => {
               </div>
             ))}
           </PalestrantesWrapper>
-        </motion.div>
-        <motion.div
-          style={{ padding: "32px 0 16px" }}
-          id="patrocinadores"
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 25 },
-          }}
-          transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
-        >
+        </div>
+        <div>
           <h2>Patrocinadores</h2>
           <PatrocinadoresWrapper>
             {PATROCINADORES.map(palestrante => (
@@ -83,7 +49,7 @@ const Palestrantes = () => {
               </div>
             ))}
           </PatrocinadoresWrapper>
-        </motion.div>
+        </div>
       </Wrapper>
     </Section>
   )

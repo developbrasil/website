@@ -1,23 +1,10 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
-import { useInView } from "react-intersection-observer"
-import { motion, useAnimation } from "framer-motion"
 import { Parallax } from "react-parallax"
 
 import bg from "../../images/pes-na-rua.jpg"
 
 const Numeros = () => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView({
-    // Percentage of item in view to trigger animation
-    threshold: 0.25,
-  })
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible")
-    }
-  }, [controls, inView])
   return (
     <>
       <Parallax
@@ -29,16 +16,7 @@ const Numeros = () => {
         <ParaImage></ParaImage>
       </Parallax>
       <TextBlockWrapper id="evento">
-        <motion.div
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 25 },
-          }}
-          transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
-        >
+        <div>
           <p>
             Em 2020, o Brasil deve atingir o maior patamar de empreendedores
             iniciais dos últimos <span>20</span> anos, com aproximadamente{" "}
@@ -51,7 +29,7 @@ const Numeros = () => {
             os anos <span>2008-2009</span> e entre os anos
             <span>2014-2016</span>.
           </p>
-        </motion.div>
+        </div>
       </TextBlockWrapper>
     </>
   )

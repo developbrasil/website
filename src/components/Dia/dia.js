@@ -1,7 +1,5 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
-import { useInView } from "react-intersection-observer"
-import { motion, useAnimation } from "framer-motion"
 import { Parallax } from "react-parallax"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -9,18 +7,6 @@ import Img from "gatsby-image"
 import bg from "../../images/plateia.jpg"
 
 const Dia = () => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView({
-    // Percentage of item in view to trigger animation
-    threshold: 0.25,
-  })
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible")
-    }
-  }, [controls, inView])
-
   const { img1 } = useStaticQuery(
     graphql`
       query {
@@ -46,16 +32,7 @@ const Dia = () => {
         <ParaImage></ParaImage>
       </Parallax>
       <TextBlockWrapper id="dia">
-        <motion.div
-          ref={ref}
-          animate={controls}
-          initial="hidden"
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 25 },
-          }}
-          transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
-        >
+        <div>
           <H2>
             DEVELOP <span>BRASIL "O Dia"</span>
           </H2>
@@ -66,7 +43,7 @@ const Dia = () => {
             preendedorismo e networking. Se prepare para conectar, aprender,
             colaborar e criar um novo mindset para conquistar os seus objetivos.
           </P>
-        </motion.div>
+        </div>
       </TextBlockWrapper>
       <ProgramacaoWrapper>
         <Programacao>
@@ -158,6 +135,7 @@ const H2 = styled.h2`
 
   @media (max-width: 768px) {
     font-size: 38px;
+    margin-left: 0;
   }
 `
 
