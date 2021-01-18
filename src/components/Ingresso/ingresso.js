@@ -7,7 +7,7 @@ const Ingresso = () => {
   return (
     <>
       <TextBlockWrapper>
-        <div>
+        <div id="ingressos">
           <IngressoBox>
             <img src={dSymbol} alt="Develop Brasil" />
             <h2>

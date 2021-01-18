@@ -11,7 +11,7 @@ const Rodape = () => {
   return (
     <Section bgImage={bg} bgImageAlt="Develop Brsil" strength={400}>
       <Wrapper>
-        <div>
+        <div id="contato">
           <Title>
             <h2>preparado para a</h2>
             <h2>maior imersão da sua vida?</h2>

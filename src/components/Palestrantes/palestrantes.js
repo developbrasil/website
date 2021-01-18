@@ -28,7 +28,7 @@ const Palestrantes = () => {
   return (
     <Section bgImage={bg} bgImageAlt="Develop Brsil" strength={400}>
       <Wrapper>
-        <div>
+        <div id="palestrantes">
           <h2>Palestrantes</h2>
           <PalestrantesWrapper>
             {PALESTRANTES.map(palestrante => (
@@ -40,7 +40,7 @@ const Palestrantes = () => {
             ))}
           </PalestrantesWrapper>
         </div>
-        <div>
+        <div id="patrocinadores">
           <h2>Patrocinadores</h2>
           <PatrocinadoresWrapper>
             {PATROCINADORES.map(palestrante => (
