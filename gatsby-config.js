@@ -10,7 +10,8 @@ module.exports = {
   siteMetadata: {
     title: "Develop Brasil",
     titleTemplate: "%s | Inquietos que procuram algo a mais",
-    description: "A simple one-page site for new businesses that uses GatsbyJS",
+    description:
+      "O DEVELOP BRASIL é uma experiência com as maiores empresas e líderes do Brasil. Imersões no mundo do empreendedorismo, com o intuito de desenvolver e expandir novos horizontes profissionais.",
     author: "Leo AD",
     image: "/develop-brasil.jpg",
     siteUrl: "https://www.experienciadevelopbrasil.com.br",
